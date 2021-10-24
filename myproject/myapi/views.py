@@ -11,6 +11,8 @@ from rest_framework.views import APIView
 from rest_framework import status
 from .serializers import RegisterSerializer
 from .models import CustomUser
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 import jwt, datetime
 # Create your views here.
 
